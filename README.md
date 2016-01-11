@@ -1,2 +1,2 @@
-# esc-code-list
+# edc-code-list
 common code lists
