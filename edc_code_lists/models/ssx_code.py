@@ -9,4 +9,4 @@ class SsxCode (BaseCodeList):
         max_length=35)
 
     class Meta:
-        app_label = "code_lists"
+        app_label = "edc_code_lists"

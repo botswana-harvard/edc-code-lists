@@ -1,7 +1,7 @@
 from edc_base.model.models import BaseListModel
 
 
-class DiagnosisSite (BaseListModel):
+class DiagnosisSite(BaseListModel):
 
     class Meta:
         app_label = 'diagnosis'

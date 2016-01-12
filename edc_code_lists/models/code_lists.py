@@ -13,7 +13,7 @@ class WcsDxAdult(BaseCodeList):
         blank=True)
 
     class Meta:
-        app_label = "code_lists"
+        app_label = "edc_code_lists"
 
 
 class WcsDxPed(BaseCodeList):
@@ -26,7 +26,7 @@ class WcsDxPed(BaseCodeList):
         blank=True)
 
     class Meta:
-        app_label = "code_lists"
+        app_label = "edc_code_lists"
 
 
 class MedicationCode (BaseCodeList):
@@ -35,7 +35,7 @@ class MedicationCode (BaseCodeList):
         max_length=35)
 
     class Meta:
-        app_label = "code_lists"
+        app_label = "edc_code_lists"
 
 
 class BodySiteCode (BaseCodeList):
@@ -44,7 +44,7 @@ class BodySiteCode (BaseCodeList):
         max_length=35)
 
     class Meta:
-        app_label = "code_lists"
+        app_label = "edc_code_lists"
 
 
 class OrganismCode (BaseCodeList):
@@ -53,7 +53,7 @@ class OrganismCode (BaseCodeList):
         max_length=35)
 
     class Meta:
-        app_label = "code_lists"
+        app_label = "edc_code_lists"
 
 
 class ArvCode (BaseCodeList):
@@ -62,7 +62,7 @@ class ArvCode (BaseCodeList):
         max_length=35)
 
     class Meta:
-        app_label = "code_lists"
+        app_label = "edc_code_lists"
 
 
 class ArvDoseStatus (BaseCodeList):
@@ -71,7 +71,7 @@ class ArvDoseStatus (BaseCodeList):
         max_length=35)
 
     class Meta:
-        app_label = "code_lists"
+        app_label = "edc_code_lists"
 
 
 class ArvModificationCode (BaseCodeList):
@@ -80,4 +80,4 @@ class ArvModificationCode (BaseCodeList):
         max_length=35)
 
     class Meta:
-        app_label = "code_lists"
+        app_label = "edc_code_lists"
