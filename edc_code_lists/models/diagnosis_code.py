@@ -5,5 +5,5 @@ class DiagnosisCode (BaseListModel):
     pass
 
     class Meta:
-        app_label = 'diagnosis'
+        app_label = 'edc_code_lists'
         verbose_name = "Code"
