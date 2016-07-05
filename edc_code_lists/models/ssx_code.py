@@ -1,9 +1,12 @@
 from django.db import models
 
-from .base_code_list import BaseCodeList
+from edc_base.model.models import BaseModel
+
+from .code_list_model_mixin import CodeListModelMixin
 
 
-class SsxCode (BaseCodeList):
+class SsxCode (CodeListModelMixin, BaseModel):
+
     list_ref = models.CharField(
         verbose_name="List Reference",
         max_length=35)

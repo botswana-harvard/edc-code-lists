@@ -1,8 +1,11 @@
 from django.db import models
-from .base_code_list import BaseCodeList
+
+from edc_base.model.models import BaseModel
+
+from .code_list_model_mixin import CodeListModelMixin
 
 
-class DxCode (BaseCodeList):
+class DxCode (CodeListModelMixin, BaseModel):
 
     list_ref = models.CharField(
         verbose_name="List Reference",

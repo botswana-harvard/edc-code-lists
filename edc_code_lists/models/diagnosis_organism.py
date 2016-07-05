@@ -1,7 +1,9 @@
-from edc_base.model.models import BaseListModel
+from edc_base.model.models import BaseModel
+
+from .code_list_model_mixin import CodeListModelMixin
 
 
-class DiagnosisOrganism (BaseListModel):
+class DiagnosisOrganism (CodeListModelMixin, BaseModel):
 
     class Meta:
-        app_label = 'diagnosis'
+        app_label = 'edc_code_lists'

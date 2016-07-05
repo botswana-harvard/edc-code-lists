@@ -1,9 +1,7 @@
 from django.db import models
 
-from edc_base.model.models import BaseModel
 
-
-class BaseCodeList (BaseModel):
+class CodeListModelMixin(models.Model):
 
     code = models.CharField(
         verbose_name="Code",

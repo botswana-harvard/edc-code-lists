@@ -1,9 +1,11 @@
 from django.db import models
 
-from .base_code_list import BaseCodeList
+from edc_base.model.models import BaseModel
+
+from .code_list_model_mixin import CodeListModelMixin
 
 
-class WcsDxAdult(BaseCodeList):
+class WcsDxAdult(CodeListModelMixin, BaseModel):
 
     """WhoClinicalStagingDxAdult"""
 
@@ -16,7 +18,7 @@ class WcsDxAdult(BaseCodeList):
         app_label = "edc_code_lists"
 
 
-class WcsDxPed(BaseCodeList):
+class WcsDxPed(CodeListModelMixin, BaseModel):
 
     """WhoClinicalStagingDxPediatric"""
 
@@ -29,7 +31,7 @@ class WcsDxPed(BaseCodeList):
         app_label = "edc_code_lists"
 
 
-class MedicationCode (BaseCodeList):
+class MedicationCode (CodeListModelMixin, BaseModel):
     list_ref = models.CharField(
         verbose_name="List Reference",
         max_length=35)
@@ -38,7 +40,7 @@ class MedicationCode (BaseCodeList):
         app_label = "edc_code_lists"
 
 
-class BodySiteCode (BaseCodeList):
+class BodySiteCode (CodeListModelMixin, BaseModel):
     list_ref = models.CharField(
         verbose_name="List Reference",
         max_length=35)
@@ -47,7 +49,7 @@ class BodySiteCode (BaseCodeList):
         app_label = "edc_code_lists"
 
 
-class OrganismCode (BaseCodeList):
+class OrganismCode (CodeListModelMixin, BaseModel):
     list_ref = models.CharField(
         verbose_name="List Reference",
         max_length=35)
@@ -56,7 +58,7 @@ class OrganismCode (BaseCodeList):
         app_label = "edc_code_lists"
 
 
-class ArvCode (BaseCodeList):
+class ArvCode (CodeListModelMixin, BaseModel):
     list_ref = models.CharField(
         verbose_name="List Reference",
         max_length=35)
@@ -65,7 +67,7 @@ class ArvCode (BaseCodeList):
         app_label = "edc_code_lists"
 
 
-class ArvDoseStatus (BaseCodeList):
+class ArvDoseStatus (CodeListModelMixin, BaseModel):
     list_ref = models.CharField(
         verbose_name="List Reference",
         max_length=35)
@@ -74,7 +76,7 @@ class ArvDoseStatus (BaseCodeList):
         app_label = "edc_code_lists"
 
 
-class ArvModificationCode (BaseCodeList):
+class ArvModificationCode (CodeListModelMixin, BaseModel):
     list_ref = models.CharField(
         verbose_name="List Reference",
         max_length=35)
