@@ -39,9 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django_crypto_fields',
-    'tastypie',
-    'edc_code_lists'
+    'django_crypto_fields.apps.AppConfig',
+    'edc_code_lists.apps.AppConfig'
 ]
 
 if 'test' in sys.argv:

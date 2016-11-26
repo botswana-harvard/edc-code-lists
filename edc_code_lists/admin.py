@@ -1,15 +1,7 @@
 from django.contrib import admin
-from django.contrib.admin.sites import AdminSite
 
 from .models import DiagnosisCode, DiagnosisOrganism, DiagnosisSite, DxCode, WcsDxAdult, WcsDxPed
-
-
-class EdcCodeListsAdminSite(AdminSite):
-    site_header = 'Code Lists'
-    site_title = 'Code Lists'
-    index_title = 'Code Lists Administration'
-    site_url = '/'
-edc_code_lists_admin = EdcCodeListsAdminSite(name='edc_code_lists_admin')
+from .admin_site import edc_code_lists_admin
 
 
 @admin.register(DiagnosisCode, site=edc_code_lists_admin)
